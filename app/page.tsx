@@ -2,8 +2,10 @@ import Sidebar from "@/components/layout/Sidebar";
 
 export default function Home() {
   return (
-    <main>
+    <div className="flex flex-row">
       <Sidebar />
-    </main>
+        <main>
+        </main>
+    </div>
   );
 }
