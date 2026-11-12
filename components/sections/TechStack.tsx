@@ -35,7 +35,7 @@ const technologies = [
 
 function TechStack() {
   return (
-    <section className="w-full px-6 pt-4 pb-10">
+    <section className="w-full px-6 pt-4 pb-0">
       <div className="mx-auto w-full max-w-3xl">
         {/* Heading */}
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
