@@ -1,5 +1,6 @@
-import { House, Folder, BriefcaseBusiness, Certificate, Mail, Layers, ExternalLink,Laptop, Sun, Moon, MapPin, ShieldCheck } from "lucide-react";
+import { House, Code2, BriefcaseBusiness, Certificate, Mail, Layers, ExternalLink,Laptop, Sun, Moon, MapPin, ShieldCheck } from "lucide-react";
 import { FaGithub, FaLinkedin} from "react-icons/fa6";
+import Link from "next/link";
 function Sidebar() {
   return (
     <aside className="sticky top-0 h-screen w-64 shrink-0 overflow-y-auto bg-zinc-100 p-6 border-r border-zinc-300">
@@ -8,8 +9,8 @@ function Sidebar() {
       <p className="text-zinc-600 mt-2 mx-6 font-bold ">Software Engineer</p>
 
       <nav  aria-label="Main navigation" className="mt-8 flex flex-col gap-2 text-zinc-900 text-sm">
-        <a href="/" className="flex items-center gap-3"><House size={18} />Home</a>
-        <a href="#projects" className="flex items-center gap-3"><Folder size={18} />Projects</a>
+        <Link href="/" className="flex items-center gap-3"><House size={18} />Home</Link>
+        <a href="#projects" className="flex items-center gap-3"><Code2 size={18} />Projects</a>
         <a href="#experience" className="flex items-center gap-3"><BriefcaseBusiness size={18} />Experience</a>
         <a href="#Certifications" className="flex items-center gap-3"><Certificate size={18} />Certifications</a>
         <a href="#contact" className="flex items-center gap-3"><Mail size={18} />Contact</a>
@@ -40,7 +41,7 @@ function Sidebar() {
           <h3 id="status-heading" className="text-xs font-semibold tracking-widest  text-zinc-900">STATUS</h3>
           <div  className="mt-3 flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-green-500" />
-            <p className="text-sm leading-none text-zinc-900">print("Still debugging my life.")</p>
+            <p className="text-sm leading-none text-zinc-900">print(&quot;Still debugging my life.&quot;)</p>
           </div>
       </section>
 

@@ -24,3 +24,43 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes tech-slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-track {
+  animation: tech-slide 25s linear infinite;
+  animation-play-state: paused;
+}
+
+.tech-marquee:hover .tech-track {
+  animation-play-state: running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-track {
+    animation: none;
+  }
+
+  .tech-marquee {
+    overflow-x: auto;
+  }
+}
+
+@media (hover: none) {
+  .tech-track {
+    animation: none;
+  }
+
+  .tech-marquee {
+    overflow-x: auto;
+  }
+}
