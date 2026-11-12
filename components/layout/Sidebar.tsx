@@ -1,20 +1,97 @@
+"use client";
+
+import { useState } from "react";
 import { House, Code2, BriefcaseBusiness, Certificate, Mail, Layers, ExternalLink,Laptop, Sun, Moon, MapPin, ShieldCheck } from "lucide-react";
 import { FaGithub, FaLinkedin} from "react-icons/fa6";
 import Link from "next/link";
 function Sidebar() {
+  const [activeSection, setActiveSection] = useState("home");
   return (
-    <aside className="sticky top-0 h-screen w-64 shrink-0 overflow-y-auto bg-zinc-100 p-6 border-r border-zinc-300">
+    <aside className="sticky top-0 h-screen w-64 shrink-0 overflow-hidden border-r border-zinc-300 bg-zinc-100 p-6">
 
       <h2 className="text-2xl font-bold text-zinc-900">Jason Leonardo</h2>
-      <p className="text-zinc-600 mt-2 mx-6 font-bold ">Software Engineer</p>
+      
+<nav
+  aria-label="Main navigation"
+  className="mt-8 flex flex-col gap-2 text-sm text-zinc-900"
+>
+  <Link
+  href="#home"
+  onClick={() => {
+    setActiveSection("home");
 
-      <nav  aria-label="Main navigation" className="mt-8 flex flex-col gap-2 text-zinc-900 text-sm">
-        <Link href="/" className="flex items-center gap-3"><House size={18} />Home</Link>
-        <a href="#projects" className="flex items-center gap-3"><Code2 size={18} />Projects</a>
-        <a href="#experience" className="flex items-center gap-3"><BriefcaseBusiness size={18} />Experience</a>
-        <a href="#Certifications" className="flex items-center gap-3"><Certificate size={18} />Certifications</a>
-        <a href="#contact" className="flex items-center gap-3"><Mail size={18} />Contact</a>
-      </nav>
+    document.getElementById("home")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
+    activeSection === "home"
+      ? "bg-zinc-200 font-semibold"
+      : "hover:bg-zinc-200"
+  }`}
+>
+  <House size={18} />
+  Home
+</Link>
+
+  <a
+    href="#projects"
+    onClick={() => setActiveSection("projects")}
+    aria-current={activeSection === "projects" ? "location" : undefined}
+    className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
+      activeSection === "projects"
+        ? "bg-zinc-200 font-semibold"
+        : "hover:bg-zinc-200"
+    }`}
+  >
+    <Code2 size={18} />
+    Projects
+  </a>
+
+  <a
+    href="#experience"
+    onClick={() => setActiveSection("experience")}
+    aria-current={activeSection === "experience" ? "location" : undefined}
+    className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
+      activeSection === "experience"
+        ? "bg-zinc-200 font-semibold"
+        : "hover:bg-zinc-200"
+    }`}
+  >
+    <BriefcaseBusiness size={18} />
+    Experience
+  </a>
+
+  <a
+    href="#certifications"
+    onClick={() => setActiveSection("certifications")}
+    aria-current={activeSection === "certifications" ? "location" : undefined}
+    className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
+      activeSection === "certifications"
+        ? "bg-zinc-200 font-semibold"
+        : "hover:bg-zinc-200"
+    }`}
+  >
+    <Certificate size={18} />
+    Certifications
+  </a>
+
+  <a
+    href="#contact"
+    onClick={() => setActiveSection("contact")}
+    aria-current={activeSection === "contact" ? "location" : undefined}
+    className={`flex items-center gap-3 rounded-lg px-3 py-2 transition-colors ${
+      activeSection === "contact"
+        ? "bg-zinc-200 font-semibold"
+        : "hover:bg-zinc-200"
+    }`}
+  >
+    <Mail size={18} />
+    Contact
+  </a>
+</nav>
+
 
       <hr className="my-6 border-zinc-200" />
         
@@ -89,16 +166,8 @@ function Sidebar() {
       <address className="mt-12 flex flex-col gap-3 not-italic text-zinc-900">
         <div className="flex items-center gap-3">
           <MapPin size={18} className="shrink-0" />
-          <span className="text-xs">Iloilo City, Philippines</span>
+          <span className="text-sm font-medium">Iloilo City, Philippines</span>
         </div>
-
-        <a
-          href="mailto:leonardojasonnunez122@gmail.com"
-          className="flex items-center gap-3 text-sm"
-        >
-          <Mail size={18} className="shrink-0" />
-          <span className="text-xs ">leonardojasonnunez122@gmail.com</span>
-        </a>
       </address>
     </aside>
   );

@@ -1,5 +1,5 @@
-
 import { Database } from "lucide-react";
+import Image from "next/image";
 
 const devicon = "https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons";
 
@@ -68,17 +68,21 @@ function TechStack() {
                   >
                     <div className="flex h-10 items-center justify-center">
                       {technology.icon ? (
-                        <img
-                          src={technology.icon}
-                          alt=""
-                          className={
-                            technology.name === "HighLevel"
-                              ? "h-8 w-24 object-contain"
-                              : "h-8 w-8 object-contain"
-                          }
-                          loading="lazy"
-                          draggable={false}
-                        />
+                        
+                      <Image
+                        src={technology.icon}
+                        alt=""
+                        width={technology.name === "HighLevel" ? 96 : 32}
+                        height={32}
+                        className={
+                          technology.name === "HighLevel"
+                            ? "h-8 w-24 object-contain"
+                            : "h-8 w-8 object-contain"
+                        }
+                        loading="lazy"
+                        draggable={false}
+                        unoptimized
+                      />
                       ) : (
                         <Database
                           size={30}
