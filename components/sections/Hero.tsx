@@ -2,7 +2,7 @@ import { Code2, ArrowUpRight, FileDown } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="px-6 py-10 text-zinc-900 md:px-10 pb-0">
+    <section id="home" className="px-6 py-10 text-zinc-900 md:px-10 pb-0">
 
       {/* CENTERED HERO CONTAINER */}
       <div className="mx-auto w-full max-w-3xl">

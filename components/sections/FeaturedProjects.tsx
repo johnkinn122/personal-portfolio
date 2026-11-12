@@ -31,7 +31,7 @@ export default function FeaturedProjects() {
 
   return (
     <section
-      id="projects"
+      id="featured-projects"
       aria-labelledby="projects-heading"
       className="mx-auto w-full max-w-3xl px-6 py-4 text-zinc-900 md:px-0"
     >
@@ -45,7 +45,7 @@ export default function FeaturedProjects() {
         </h2>
 
         <Link
-          href="/projects"
+          href="#projects"
           className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-900 transition-colors hover:text-zinc-500"
         >
           View All Projects

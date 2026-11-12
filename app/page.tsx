@@ -1,6 +1,7 @@
 import Sidebar from "@/components/layout/Sidebar";
 import Hero from "@/components/sections/Hero";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
+import AllProjects from "@/components/sections/AllProjects";
 import ExperienceEducation from "@/components/sections/ExperienceEducation";
 import TechStack from "@/components/sections/TechStack";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <TechStack/>
         <FeaturedProjects/>
         <ExperienceEducation/>
+        <AllProjects/>
       </main>
 
     </div>
