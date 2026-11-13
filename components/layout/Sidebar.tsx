@@ -97,7 +97,19 @@ function Sidebar() {
         
       <section aria-labelledby="stack-heading">
         <h3 id="stack-heading" className="text-xs font-semibold tracking-widest  text-zinc-900">STACK</h3>
-        <a href="#skills" className="text-zinc-900 flex items-center gap-3 mt-3 text-sm"><Layers size={18} />Tech Stack</a>
+          <a
+            href="#tech-stack"
+            onClick={() => setActiveSection("tech-stack")}
+            className={`mt-3 flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors duration-200 ${
+              activeSection === "tech-stack"
+                ? "bg-zinc-200 font-semibold text-zinc-950"
+                : "text-zinc-900 hover:bg-zinc-200"
+            }`}
+          >
+            <Layers size={18} />
+            Tech Stack
+          </a>
+
       </section>
 
       <hr className="my-6 border-zinc-200" />
@@ -106,10 +118,36 @@ function Sidebar() {
         <h3 className="text-xs font-semibold tracking-widest  text-zinc-900">
           RESOURCES
         </h3>
+          <a
+            href="https://github.com/johnkinn122"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setActiveSection("github")}
+            className={`mt-0 flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors duration-200 ${
+              activeSection === "github"
+                ? "bg-zinc-200 font-semibold text-zinc-950"
+                : "text-zinc-900 hover:bg-zinc-200"
+            }`}
+          >
+            <FaGithub size={18} />
+            GitHub
+          </a>
 
-        <a href="/resume.pdf" className="flex items-center gap-3 text-sm"><ExternalLink size={18}/>Resume (PDF)</a>
-        <a href="https://github.com/johnkinn122" className="flex items-center gap-3 text-sm" target="_blank" rel="noopener noreferrer"><FaGithub size={18} />Github</a>
-        <a href="https://www.linkedin.com/in/jleo8/" className="flex items-center gap-3 text-sm" target="_blank" rel="noopener noreferrer"><FaLinkedin size={18} />LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/jleo8/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setActiveSection("linkedin")}
+          className={`mt-0 flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors duration-200 ${
+            activeSection === "linkedin"
+              ? "bg-zinc-200 font-semibold text-zinc-950"
+              : "text-zinc-900 hover:bg-zinc-200"
+          }`}
+        >
+          <FaLinkedin size={18} />
+          LinkedIn
+        </a>
+
       </nav>
 
       <hr className="my-6 border-zinc-200" />
