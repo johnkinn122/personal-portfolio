@@ -228,7 +228,7 @@ export default function AllProjects() {
     <section
       id="projects"
       aria-labelledby="all-projects-heading"
-      className="w-full py-12 text-zinc-900 sm:py-16"
+      className="w-full py-12 text-zinc-900 sm:py-4"
     >
       <div className="mx-auto w-full max-w-4xl px-6 sm:px-8 lg:pl-24 lg:pr-16">
         {/* Divider Line */}
