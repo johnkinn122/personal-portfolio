@@ -4,6 +4,7 @@ import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import AllProjects from "@/components/sections/AllProjects";
 import ExperienceEducation from "@/components/sections/ExperienceEducation";
 import Certifications from "@/components/sections/Certifications";
+import Contact from "@/components/sections/Contact";
 import TechStack from "@/components/sections/TechStack";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <ExperienceEducation/>
         <AllProjects/>
         <Certifications/>
+        <Contact/>
       </main>
 
     </div>
