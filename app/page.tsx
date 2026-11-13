@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import AllProjects from "@/components/sections/AllProjects";
 import ExperienceEducation from "@/components/sections/ExperienceEducation";
+import Certifications from "@/components/sections/Certifications";
 import TechStack from "@/components/sections/TechStack";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <FeaturedProjects/>
         <ExperienceEducation/>
         <AllProjects/>
+        <Certifications/>
       </main>
 
     </div>
