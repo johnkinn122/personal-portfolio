@@ -45,14 +45,14 @@ function Hero() {
                 <ArrowUpRight size={14} />
               </a>
 
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-3 py-2 text-xs font-medium text-zinc-900 transition-transform duration-200 hover:bg-zinc-50 motion-safe:hover:scale-[1.02]"
-              >
-                <FileDown size={14} />
-                Download Resume
-              </a>
+                  <a
+                    href="/resume_leonardo.pdf"
+                    download="Jason-Leonardo-Resume.pdf"
+                    className="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white px-3 py-2 text-xs font-medium text-zinc-900 transition-transform duration-200 hover:bg-zinc-50 motion-safe:hover:scale-[1.02]"
+                  >
+                    <FileDown size={14} />
+                    Download Resume
+                  </a>
 
             </div>
           </div>
