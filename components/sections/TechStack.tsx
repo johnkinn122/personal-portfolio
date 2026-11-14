@@ -126,7 +126,10 @@ const technologies = [
 
 function TechStack() {
   return (
-    <section id="tech-stack" className="w-full scroll-mt-6 px-6 pt-4 pb-0">
+    <section
+        id="tech-stack"
+        className="w-full scroll-mt-6 px-6 pt-4 pb-0"
+    >
       <div className="mx-auto w-full max-w-3xl">
         {/* Heading */}
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
