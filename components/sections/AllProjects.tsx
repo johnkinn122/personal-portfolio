@@ -217,8 +217,8 @@ function ProjectPreview({ project }: { project: Project }) {
 }
 
 export default function AllProjects() {
-      const [activeCategory, setActiveCategory] =
-        useState<Category | null>(null);
+     const [activeCategory, setActiveCategory] =
+      useState<Category | null>("Full-Stack");
 
       const filteredProjects = projects.filter(
         (project) => project.category === activeCategory
